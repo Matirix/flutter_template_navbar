@@ -16,7 +16,6 @@ Future<String> callOpenAI(List<String> promptContent) async {
   if (apiKey == null) {
     throw Exception('API key not found');
   }
-  // String apiKey = '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';
   String prompt = 'Tell me about Sir Winston Churchill';
 
   // Request payload
