@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:template_v2/open_ai.dart';
 import 'package:template_v2/sign_in.dart';
+import 'dart:developer' as developer;
+import 'package:flutter/foundation.dart' show debugPrint;
 
-void main() {
+
+
+Future<void> main() async {
   runApp(const MyApp());
+
+  //test calling OpenAI API
+  try {
+    final response = await callOpenAI();
+    debugPrint('API response: $response');
+  } catch (error) {
+    debugPrint('Error: $error');
+  }
 }
 
 class MyApp extends StatelessWidget {
