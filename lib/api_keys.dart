@@ -1,1 +1,1 @@
-const String openAiApiKey = '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';
+const String openAiApiKey = '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';
