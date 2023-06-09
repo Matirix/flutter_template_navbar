@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'api_keys.dart';
+import 'utils/api_keys.dart';
 
 
-Future<String> callOpenAI(List<String> promptContent) async {
+Future<String> callOpenAI() async {
   // API key stored in Flutter Secure Storage
   final storage = FlutterSecureStorage();
 
